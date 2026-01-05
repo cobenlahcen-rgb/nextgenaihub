@@ -1,36 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NextGen AI Hub</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI conversational companions for roleplay, storytelling, and productivity." />
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; max-width: 980px; margin: 0 auto; padding: 24px; line-height: 1.6; }
+    header { margin-bottom: 24px; }
+    nav a { margin-right: 12px; }
+    section { margin: 28px 0; padding: 18px; border: 1px solid #eee; border-radius: 10px; }
+    h1 { margin: 0 0 10px; }
+    h2 { margin-top: 0; }
+    footer { margin-top: 40px; padding-top: 18px; }
+    small { color: #555; }
+    .btn { display:inline-block; padding:10px 14px; border:1px solid #111; border-radius:10px; text-decoration:none; }
+  </style>
 </head>
+
 <body>
+  <header>
+    <h1>NextGen AI Hub</h1>
 
-  <h1>NextGen AI Hub</h1>
-  <p><strong>AI Conversational Companion Platform</strong></p>
+    <nav>
+      <a href="#included">What’s Included</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-  <p>
-    NextGen AI Hub provides intelligent conversational companions designed
-    for roleplay, emotional support, and creative interaction.
-  </p>
+    <p>
+      NextGen AI Hub provides AI conversational companions for roleplay, storytelling, brainstorming, and interactive experiences—built for entertainment and productivity.
+      We do not provide medical, mental health, or crisis services.
+    </p>
 
-  <h2>Pricing</h2>
-  <ul>
-    <li>Starter – $9.99 / month</li>
-    <li>Pro – $19.99 / month</li>
-    <li>Creator – $29.99 / month</li>
-  </ul>
+    <!-- Optional: if you have a checkout link/button later, keep it simple -->
+    <!-- <a class="btn" href="#pricing">View Pricing</a> -->
+  </header>
 
-  <p>
-    Contact: support@nextgenaihub.net
-  </p>
+  <section id="included">
+    <h2>What’s Included (Deliverables)</h2>
+    <ul>
+      <li><strong>AI conversational companions</strong> for roleplay, storytelling, and creative exploration</li>
+      <li><strong>Custom scenarios</strong>: create and save prompts, characters, and conversation starters</li>
+      <li><strong>Productivity support</strong>: brainstorming, rewriting, idea generation, planning outlines</li>
+      <li><strong>Conversation history</strong> (where available) to continue sessions</li>
+      <li><strong>Safe content boundaries</strong>: no adult content, no therapy/medical claims</li>
+      <li><strong>Email support</strong>: support@nextgenaihub.net</li>
+    </ul>
+    <p><small>
+      NextGen AI Hub is for entertainment and productivity. It is not a substitute for professional advice or emergency services.
+    </small></p>
+  </section>
+
+  <section id="pricing">
+    <h2>Pricing</h2>
+
+    <h3>Monthly</h3>
+    <ul>
+      <li><strong>Starter</strong> — $9.99 / month</li>
+      <li><strong>Pro</strong> — $19.99 / month</li>
+      <li><strong>Creator</strong> — $29.99 / month</li>
+    </ul>
+
+    <h3>Yearly (save vs monthly)</h3>
+    <ul>
+      <li><strong>Starter</strong> — $99.00 / year</li>
+      <li><strong>Pro</strong> — $190.00 / year</li>
+      <li><strong>Creator</strong> — $290.00 / year</li>
+    </ul>
+
+    <p><small>
+      Subscriptions renew automatically until cancelled. Cancel anytime from your account or by contacting support.
+    </small></p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:support@nextgenaihub.net">support@nextgenaihub.net</a></p>
+  </section>
 
   <footer>
-    <a href="privacy.html">Privacy Policy</a> |
-    <a href="terms.html">Terms of Service</a> |
-    <a href="refund.html">Refund Policy</a>
+    <hr />
+    <nav aria-label="Legal">
+      <a href="/privacy.html">Privacy Policy</a> |
+      <a href="/terms.html">Terms of Service</a> |
+      <a href="/refund.html">Refund Policy</a>
+    </nav>
+    <p><small>© <span id="y"></span> NextGen AI Hub</small></p>
   </footer>
 
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
