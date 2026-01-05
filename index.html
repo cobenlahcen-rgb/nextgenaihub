@@ -4,94 +4,130 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NextGen AI Hub</title>
-  <meta name="description" content="NextGen AI Hub provides AI conversational experiences for roleplay, storytelling, brainstorming, and interactive exploration—built for entertainment and productivity.
-" />
   <style>
-    body { font-family: Arial, Helvetica, sans-serif; max-width: 980px; margin: 0 auto; padding: 24px; line-height: 1.6; }
-    header { margin-bottom: 24px; }
-    nav a { margin-right: 12px; }
-    section { margin: 28px 0; padding: 18px; border: 1px solid #eee; border-radius: 10px; }
-    h1 { margin: 0 0 10px; }
-    h2 { margin-top: 0; }
-    footer { margin-top: 40px; padding-top: 18px; }
-    small { color: #555; }
-    .btn { display:inline-block; padding:10px 14px; border:1px solid #111; border-radius:10px; text-decoration:none; }
+    :root{
+      --bg:#ffffff;
+      --text:#111;
+      --muted:#444;
+      --card:#f7f7fb;
+      --border:#e6e6ef;
+      --link:#4b36ff;
+    }
+    *{box-sizing:border-box;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial}
+    body{margin:0;background:var(--bg);color:var(--text)}
+    .wrap{max-width:920px;margin:0 auto;padding:32px 18px 60px}
+    header{margin-bottom:18px}
+    h1{margin:0 0 6px;font-size:34px}
+    .nav a{margin-right:12px;color:var(--link);text-decoration:underline;font-size:14px}
+    .lead{max-width:780px;color:var(--muted);line-height:1.55;margin:10px 0 0}
+    .card{
+      margin-top:18px;
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:12px;
+      padding:18px 18px;
+    }
+    h2{margin:0 0 10px;font-size:20px}
+    ul{margin:10px 0 0 18px}
+    li{margin:8px 0;color:#222}
+    .small{font-size:13px;color:var(--muted);line-height:1.45;margin-top:10px}
+    .pill{
+      display:inline-block;
+      padding:6px 10px;
+      border:1px solid var(--border);
+      border-radius:999px;
+      background:#fff;
+      font-size:12px;
+      color:#333;
+      margin-top:10px;
+    }
+    .footer{margin-top:24px;color:var(--muted);font-size:13px}
+    .footer a{color:var(--link)}
+    .divider{height:1px;background:var(--border);margin:14px 0}
   </style>
 </head>
-
 <body>
-  <header>
-    <h1>NextGen AI Hub</h1>
+  <div class="wrap">
+    <header>
+      <h1>NextGen AI Hub</h1>
+      <div class="nav">
+        <a href="#included">What’s Included</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </div>
 
-    <nav>
-      <a href="#included">What’s Included</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#contact">Contact</a>
-    </nav>
+      <p class="lead">
+        NextGen AI Hub provides <strong>AI conversational experiences</strong> for roleplay, storytelling, brainstorming,
+        and interactive exploration—built for entertainment and productivity.
+      </p>
 
-    <p>
-      NextGen AI Hub provides AI conversational companions for roleplay, storytelling, brainstorming, and interactive experiences—built for entertainment and productivity.
-      We do not provide medical, mental health, or crisis services.
-    </p>
+      <p class="lead">
+        <strong>All interactions are fictional, non-romantic,</strong> and designed for creative and productivity use only.
+        We do not provide medical, mental health, or crisis services.
+      </p>
 
-    <!-- Optional: if you have a checkout link/button later, keep it simple -->
-    <!-- <a class="btn" href="#pricing">View Pricing</a> -->
-  </header>
+      <span class="pill">Safe content • No therapy • No adult content</span>
+    </header>
 
-  <section id="included">
-    <h2>What’s Included (Deliverables)</h2>
-    <ul>
-      <li><strong>AI conversational companions</strong> for roleplay, storytelling, and creative exploration</li>
-      <li><strong>Custom scenarios</strong>: create and save prompts, characters, and conversation starters</li>
-      <li><strong>Productivity support</strong>: brainstorming, rewriting, idea generation, planning outlines</li>
-      <li><strong>Conversation history</strong> (where available) to continue sessions</li>
-      <li><strong>Safe content boundaries</strong>: no adult content, no therapy/medical claims</li>
-      <li><strong>Email support</strong>: support@nextgenaihub.net</li>
-    </ul>
-    <p><small>
-      NextGen AI Hub is for entertainment and productivity. It is not a substitute for professional advice or emergency services.
-    </small></p>
-  </section>
+    <section id="included" class="card">
+      <h2>What’s Included (Deliverables)</h2>
+      <ul>
+        <li><strong>AI conversational experiences</strong> for roleplay, storytelling, and creative exploration</li>
+        <li><strong>Custom scenarios:</strong> create and save prompts, characters, and conversation starters</li>
+        <li><strong>Productivity support:</strong> brainstorming, rewriting, idea generation, planning outlines</li>
+        <li><strong>Conversation history</strong> (where available) to continue sessions</li>
+        <li><strong>Safe content boundaries:</strong> no adult content, no therapy/medical claims</li>
+        <li><strong>Email support:</strong> support@nextgenaihub.net</li>
+      </ul>
+      <p class="small">
+        NextGen AI Hub is for entertainment and productivity. It is not a substitute for professional advice or emergency services.
+      </p>
+    </section>
 
-  <section id="pricing">
-    <h2>Pricing</h2>
+    <section id="pricing" class="card">
+      <h2>Pricing</h2>
 
-    <h3>Monthly</h3>
-    <ul>
-      <li><strong>Starter</strong> — $9.99 / month</li>
-      <li><strong>Pro</strong> — $19.99 / month</li>
-      <li><strong>Creator</strong> — $29.99 / month</li>
-    </ul>
+      <p class="small">
+        <strong>Pre-launch notice:</strong> Subscription plans will be available upon release.
+        Pricing will be announced at launch.
+      </p>
 
-    <h3>Yearly (save vs monthly)</h3>
-    <ul>
-      <li><strong>Starter</strong> — $99.00 / year</li>
-      <li><strong>Pro</strong> — $190.00 / year</li>
-      <li><strong>Creator</strong> — $290.00 / year</li>
-    </ul>
+      <div class="divider"></div>
 
-    <p><small>
-      Subscriptions renew automatically until cancelled. Cancel anytime from your account or by contacting support.
-    </small></p>
-  </section>
+      <p class="small" style="margin:0 0 6px;"><strong>Planned subscription tiers (names only)</strong></p>
+      <ul>
+        <li>Starter</li>
+        <li>Pro</li>
+        <li>Creator</li>
+      </ul>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:support@nextgenaihub.net">support@nextgenaihub.net</a></p>
-  </section>
+      <p class="small">
+        Subscriptions will renew automatically until cancelled. Users will be able to cancel anytime from their account
+        or by contacting support.
+      </p>
+    </section>
 
-  <footer>
-    <hr />
-    <nav aria-label="Legal">
-      <a href="/privacy.html">Privacy Policy</a> |
-      <a href="/terms.html">Terms of Service</a> |
-      <a href="/refund.html">Refund Policy</a>
-    </nav>
-    <p><small>© <span id="y"></span> NextGen AI Hub</small></p>
-  </footer>
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p class="small" style="margin-top:0;">
+        Support: <strong>support@nextgenaihub.net</strong>
+      </p>
+
+      <p class="small">
+        Policies:
+        <a href="/privacy.html">Privacy Policy</a> ·
+        <a href="/terms.html">Terms of Service</a> ·
+        <a href="/refund.html">Refund Policy</a>
+      </p>
+    </section>
+
+    <div class="footer">
+      © <span id="y"></span> NextGen AI Hub
+    </div>
+  </div>
 
   <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
+    document.getElementById('y').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
